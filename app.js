@@ -175,3 +175,634 @@
 // } else {
 //     alert (pow(x,n))
 // }
+
+// let a = +prompt("");
+
+// function revers (a) {
+//     let result = 0
+//     for (let i = a.length; i > a.length; i--) {
+//         result += result + a
+//     }
+//     return alert(result);
+// }
+
+// revers(a);
+
+// let user = {}
+
+// user.name = "John"
+// user.surname = "Smith"
+// user.name = "Pete"
+// delete user.name;
+
+// console.log(user);
+
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+//   }
+
+//   let sum = 0;
+
+//   for (let key in salaries) {
+//     sum += salaries[key];
+//   }
+
+//   alert(sum);
+
+// let styles = ["Джаз","Блюз"];
+
+// styles.push ("Rock");
+// styles[Math.floor((styles.length -1)/2)] = "Classic";
+// console.log(styles);
+
+
+
+// function sumInput (){
+//     let arr = [];
+//     while(true) {
+//         let a = prompt("");
+//         if (a === "" || a === null || !isFinite(a)) break;
+
+//         arr.push(+a); 
+//     }
+//     let Sum = 0
+//     for (let i of arr ) {
+//         Sum += i
+//     }
+//     return Sum;
+// }
+// alert(sumInput());
+
+// let a = document.querySelector('.one');
+// let b = document.createElement('ul');
+// a.append(b);
+// while(true){
+//     let text = prompt("");
+//     if(!text) {
+//         break;
+//     }
+//     let li = document.createElement('li');
+//     li.textContent = text;
+//     b.append(li);
+// }
+
+// let a = document.querySelectorAll('li');
+
+// for (let count of a) {
+//     let child = count.querySelectorAll('li').length;
+//     if(child === 0) continue;
+
+//     count.firstChild.textContent += `[${child}]`
+// }
+
+// let calendar = document.getElementById("calendar");
+// console.log(calendar);
+
+// function createCalendar() {
+//     let table = '<table><tr><th>ПН</th><th>ВТ</th><th>СР</th><th>ЧТ</th><th>ПТ</th><th>СБ</th><th>ВС</th></tr>';
+
+//     for (let i = 1; i <= 31; i++){
+
+//         table += `<td>${i}</td>`;
+//         if(i === 7 || i === 14 || i === 21 || i === 28){
+//             table += '<tr></tr>';
+//         }
+
+//     }
+//     for (let i = 0; i < 4; i++){
+//         table += "<td></td>"
+//     }
+
+
+//     calendar.innerHTML = table;
+// }
+
+// createCalendar();
+
+
+// function settime(){
+//     let clock = document.getElementById('calendar');
+//     let date = new Date ();
+//     let time = date.toLocaleTimeString();
+//     clock.innerHTML = time
+// }
+// let timeNow;
+// function clockStart(){
+//     timeNow = setInterval (settime, 1000);
+//     settime();
+// };
+
+// function clockStop(){
+//     clearInterval (timeNow);
+// }
+
+
+
+// let headArr = [];
+// for (let i = 0; i < allTr.length; i++){
+//     let arr = [];
+//     let tdInTr = allTr[i].querySelectorAll('td');
+//     for(let k = 0; k < tdInTr.length; k++){
+//         arr.push(tdInTr[k].textContent);
+//     }
+//     headArr.push(arr);
+// }
+
+// headArr.sort();
+// table.textContent = (headArr);
+// console.log(headArr);
+
+// let arr = [200, 80, 234, 666, 777, 1, 50, 0, 100, 15, 77, 32, 30];
+// let newLet;
+
+// for (let i = 0; i < arr.length; i++) {
+//     for (let k = i; k >= 0; k--) {
+//         if (arr[k] < arr[k - 1]) {
+//             newLet = arr[k - 1];
+//             arr[k - 1] = arr[k];
+//             arr[k] = newLet;
+//         } else {
+//             break;
+//         }
+//     }
+// }
+// console.log(arr);
+
+// let allTr = document.querySelectorAll('tr');
+
+// for (let i = 2; i < allTr.length; i++) {
+//      allTr = document.querySelectorAll('tr');
+//     for (let k = 0; i-k > 0; k++) {
+//         if (allTr[i].firstElementChild.textContent < allTr[i - k].firstElementChild.textContent) {
+//             allTr[i - k].before(allTr[i])
+//         }
+//     }
+// }
+
+// function showNotification({top = 0, right = 0, className, html}) {
+//     let message = document.createElement('div');
+//     message.classList.add ("notification");
+//     message.classList.add (className)
+//     message.style.top = top + "px";
+//     message.style.right = right + "px";
+//     message.innerHTML = html;
+//     document.body.append(message)
+//     setTimeout(() => message.remove(), 1500)
+//   }
+
+//   let i = 1;
+//   setInterval(() => {
+//     showNotification({
+//       top: 10,
+//       right: 10,
+//       html: 'Hello ' + i++,
+//       className: "welcome"
+//     });
+//   }, 2000);
+
+// let ball = document.getElementById('ball');
+// let place = document.getElementById('field');
+// console.log(ball);
+// console.log(field);
+// console.log(ball.clientWidth)
+// ball.style.clientWidth = 40
+// ball.style.clientHeight = 40
+
+// ball.style.left = Math.round(place.clientWidth / 2 - ball.clientWidth / 2) + 'px';
+// ball.style.top = Math.round(place.clientHeight / 2 - ball.clientHeight / 2) + 'px';
+
+
+
+// let but = document.getElementById('hider');
+// let text = document.getElementById('text');
+
+// but.onclick = () => {
+//     text.style.display = "none";
+// };
+
+
+
+
+
+// let field = document.getElementById('field');
+// let ball = document.getElementById('ball');
+
+// field.addEventListener("click", move);
+
+
+// function move(event){
+
+//     let fieldCor = field.getBoundingClientRect();
+//     let ballCor = ball.getBoundingClientRect();
+//     let ballCorTop = event.clientY - fieldCor.top - ball.clientHeight/2 - field.clientTop;
+//     let ballCorLeft = event.clientX - fieldCor.left - ball.clientWidth/2 - field.clientLeft;
+
+//     if (ballCorTop < (fieldCor.top - field.clientTop)){
+//         ballCorTop = 0;
+//     };
+//     if(ballCorLeft < (fieldCor.left - field.clientLeft)){
+//         ballCorLeft = 0;
+//     };
+//     if(ballCorLeft + ball.clientWidth > field.clientWidth){
+//         ballCorLeft = field.clientWidth - ball.clientWidth;
+//     };
+//     if(ballCorTop + ball.clientHeight > field.clientHeight){
+//         ballCorTop = field.clientHeight - ball.clientHeight;
+//     };
+
+//     ball.style.top = (ballCorTop) + "px";
+//     ball.style.left = (ballCorLeft) + "px";   
+//     console.log(ballCor.x);
+// }
+
+
+
+// let open = document.querySelector('ul');
+
+// title.onclick = function(){
+//     open.classList.toggle("open");
+//     title.classList.toggle("come");
+// }
+
+
+// let btn = document.getElementsByClassName("remove-button");
+// let text = document.getElementsByClassName("pane");
+
+// function doclose(event) {
+//    event.currentTarget.parentElement.classList.toggle("removeMessage");
+// };
+
+
+
+// let btnRight = document.querySelector(".right");
+// let btnLeft = document.querySelector(".left");
+// let wrapper = document.querySelector(".wrapper");
+
+// let offset = 3;
+// let image = 130
+// btnRight.addEventListener('click', moveRight);
+// btnLeft.addEventListener('click', moveLeft);
+
+// function moveRight(){
+
+//     wrapper.scrollLeft += image * offset;
+// };
+// function moveLeft(){
+//     wrapper.scrollLeft -= image * offset;
+// };
+
+
+// tree.addEventListener("click", remove);
+
+// function remove(event) {
+//     console.log(event.target.nextElementSibling)
+//     event.target.nextElementSibling.classList.toggle("removeMessage");
+// }
+
+// let grid = document.querySelector('#grid');
+// let allTr = document.querySelectorAll("tr");
+// grid.addEventListener("click", (event)=>{
+//     let target =event.target;
+//     if(target.tagName!='TH') return;
+//     if(target.type == "Имя"){
+//         for (let i = 2; i < allTr.length; i++) {
+//             allTr = document.querySelectorAll('tr');
+//            for (let k = 0; i-k > 0; k++) {
+//                if (allTr[i].lastElementChild.textContent < allTr[i - k].lastElementChild.textContent) {
+//                    allTr[i - k].before(allTr[i])
+//                }
+//            }
+//         }
+//     }
+//     if(target.innerHTML == "Возраст"){
+//         for (let i = 2; i < allTr.length; i++) {
+//             allTr = document.querySelectorAll('tr');
+//            for (let k = 0; i-k > 0; k++) {
+//                if (+allTr[i].firstElementChild.textContent < +allTr[i - k].firstElementChild.textContent) {
+//                    allTr[i - k].before(allTr[i])
+//                }
+//            }
+//         }
+//     }
+
+// });
+
+// let button = document.getElementById("show-button");
+// let modal = document.getElementById('prompt-form-container');
+// let form = document.getElementById('prompt-form');
+// let showMessage = document.getElementById("prompt-message");
+// formClose = form.cancel
+// let message = "Введите что-нибудь<br>...умное :)";
+
+// button.addEventListener("click", () => showPrompt(message, submity));
+
+// function showPrompt(HTML, sum) {
+//     showMessage.innerHTML = HTML
+//     modal.style.display = "block"
+//     form.onsubmit = (event) => {
+//         if (form.text.value) {
+//             sum(form.text.value)
+//         } else if (!form.text.value) {
+//             event.preventDefault()
+//         }
+//     }
+//     formClose.onclick = () => {
+//         sum("null")
+//         modal.style.display = "none"
+//     }
+// }
+
+// function submity(value) {
+//     alert(value)
+// }
+
+// function Calculator () {
+//     this.read = function() {
+//         a = +prompt()
+//         b = +prompt()
+//     };
+//     this.sum = function(){
+//         return a+b
+//     };
+//     this.mul = function(){
+//         return a*b
+//     };
+// };
+// let calculator = new Calculator
+// calculator.read();
+// alert("Sum=" + calculator.sum() );
+// alert("Mul=" + calculator.mul() );
+
+// function Accumulator(startingValue){
+//     this.sum = startingValue
+//     this.read = function(){
+//         this.sum += +prompt('vvedi 4islo')
+//     };
+// }
+
+// let accumulator = new Accumulator(1)
+// accumulator.read();
+// accumulator.read();
+// alert(accumulator.sum);
+
+// function sum(numbers) {
+//     "use strict";
+//     let a = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (isFinite(numbers[i])) {
+//             a += numbers[i];
+//         } else {
+//             return 0;
+//         };
+//     };
+//     return a;
+// };
+// let result = sum();
+
+// function paperwork(n, m) {
+//     if(n > 0 && m > 0){
+//         return n*m
+//     } else {
+//         return 0;
+//     }
+//   }
+//  let a = paperwork(3,-3)
+//   console.log(a)
+
+// function findAverage(array) {
+//     let a = 0;
+//     if (array.length != 0) {
+//         for (let i = 0; i < array.length; i++) {
+//             a += array[i];
+//         };
+//     } else {
+//         return fal;
+//     };
+//     return a/array.length;
+//   }
+// let arr = [];
+// let result = findAverage(arr);
+// console.log(result)
+
+// function smash(words) {
+//     let a = "";
+//     for (let i = 0; i < words.length; i++) {
+//         if (i < words.length - 1) {
+//             a += words[i] + " ";
+//         } else {
+//             a += words[i]
+//         }
+//     }
+//     return a;
+// };
+
+// function countBy(x, n) {
+//     let z = [];
+//     for (let i = 1; i <= n; i++) {
+//         z.push(x * i)
+//     }
+//     return z;
+// }
+
+// function bmi(weight, height) {
+//     index = weight/(height*2)
+//     console.log(index)
+//     if(index <= 18.5){
+//         return "Недостаточный вес"
+//     } else if (index <= 25){
+//         return "Нормальный"
+//     } else if (index <= 30){
+//         return "Избыточный вес"
+//     } else {
+//         return "Ожирение"
+//     }
+
+//   }
+
+// function removeEveryOther(arr) {
+//     newarr = [];
+//     for (let i = 0; i <= arr.length; i+=2) {
+//         newarr.push(arr[i])
+//     }
+//     return newarr;
+// }
+
+// function sumMix(x){
+//     let sum = +x[0];
+//     for(let i = 1; i < x.length; i++){
+//         sum = +sum + +x[i]
+//     }
+//     return sum;
+// }
+
+// function makeNegative(num) {
+//     if (num > 0){
+//         return num - (num + num);
+//     }else if (num < 0){
+//         return num;
+//     } else if (num == 0){
+//         return 0;
+//     }
+//   }
+
+// function summation (num) {
+//     let result = 0;
+//     for (let i = 1; i <= num; i++){
+//        result += i
+//     }
+//     return result;
+//   }
+
+// function summation(busStops) {
+//     let result = +busStops[0][0];
+//     for (let i = 0; i < busStops.length; i++) {
+//         for(let k = 0; k < busStops[i].length; k++){
+//             result += +busStops[i][k][+0] - +busStops[i][k][+1]
+//             console.log(result)
+//         }
+//     }
+//     return result;
+// }
+
+// let array = [[10, 0], [3, 5], [5, 8]];
+// let result = summation(array);
+// console.log(result)
+
+// let arr = [5, 3, 8, 1];
+// function filtered (arr, a, b) {
+//    return arr.filter(number => number >= a && number <= b);
+// };
+// let result = filtered(arr, 1, 4)
+// console.log (result)
+
+// let arr = [5, 2, 1, -10, 8];
+// arr.sort(function(a, b) { return a - b; }).reverse();
+
+// let arr = ["HTML", "JavaScript", "CSS"];
+// let sorted = [...arr].sort();
+
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
+// let users = [ vasya, petya, masha ];
+// let names = users.map(item => item.name)
+
+// let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+// let petya = { name: "Петя", surname: "Иванов", id: 2 };
+// let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+// let users = [ vasya, petya, masha ];
+// let usersMapped = users.map((item) => ({
+//     fullName: item.name + " " + item.surname,
+//     id: item.id,
+// }))
+
+// alert( usersMapped[0].id )
+// alert( usersMapped[0].fullName )
+// console.log(usersMapped)
+
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
+// let arr = [ vasya, petya, masha ];
+// arr.sort((a,b) => a.age - b.age)
+
+// let arr = [1, 2, 3];
+// const shuffle = (arr) => {
+//     return arr.sort(() => Math.round(Math.random()) - 0.5);
+// }
+
+// let vasya = { name: "Вася", age: 10 };
+// let petya = { name: "Петя", age: 20 };
+// let masha = { name: "Маша", age: 30 };
+// let arr = [ vasya, petya, masha ];
+// function getAverageAge (arr){
+//     let sum = 0
+//     arr.map(index => sum += index.age)
+//     return sum / arr.length;
+// }
+
+// let strings = ["кришна", "кришна", "харе", "харе",
+// "харе", "харе", "кришна", "кришна", ":-O"
+// ];
+// let result = Array.from(new Set(strings))
+// let result = function (str){
+//     let arr = [];
+//     for (let i = 0; i < str.length; i++) {
+//         if (!arr.includes(str[i])){
+//             arr.push(str[i])
+//         }
+//     }
+//     return arr;
+// }
+
+// let users = [
+//     {id: 'john', name: "John Smith", age: 20},
+//     {id: 'ann', name: "Ann Smith", age: 24},
+//     {id: 'pete', name: "Pete Peterson", age: 31},
+//   ];
+//   let usersById = users.reduce((acc, user) => {
+//     acc[user.id] = user
+//     return acc;
+//   }, {});
+//   console.log(usersById)
+
+// function accum(s) {
+// 	return s.toLowerCase().split("").map((item, index) => {
+//         let a = item.toUpperCase()
+//         let b = a;
+//         for(let i = 0; i < index; i++){
+//             b += item
+//         }
+//         return b;
+//     }).join('-');
+// }
+
+// function createPhoneNumber(numbers){
+//     let arr1 = numbers.splice(0, 3);
+//     let arr2 = numbers.splice(0, 3);
+//     let arr3 = numbers.splice(0, 4);
+//     let result = `(${arr1.join("")}) ${arr2.join("")}-${arr3.join("")}`
+//     return result
+// }
+
+// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
+
+// function Calculator () {
+//     this.operations = {
+//         "+": (a, b) => a + b,
+//         "-": (a, b) => a - b,
+//     }
+//     this.calc = (str) => {
+//         let arr = str.split(" ")
+//         return this.operations[arr[1]](+arr[0],+arr[2]);
+//     }
+//     this.addMethod = (op, func) => {
+//         this.operations[op] = func
+//     }
+// }
+
+// let powerCalc = new Calculator;
+// powerCalc.addMethod("*", (a, b) => a * b);
+// powerCalc.addMethod("/", (a, b) => a / b);
+// powerCalc.addMethod("**", (a, b) => a ** b);
+
+// console.log(powerCalc.calc("12 ** 3"))
+
+// let arr = [3,1,7,9,6]
+// function findOutlier(integers){
+//     let num1 = 0;
+//     let num2 = 0;
+//     for (let i = 0; i < 3; i++){
+//         if(integers[i]%2 != 0){
+//             ++num1
+//         }else {
+//             ++num2
+//         }
+//     }
+//     if (num1 > num2){
+//         return integers.find((item) => item%2 == 0)
+//     } return integers.find((item) => item%2 != 0)
+// }

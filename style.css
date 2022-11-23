@@ -1,0 +1,265 @@
+/* body {
+    position: relative;
+}
+.notification {
+    position: fixed;
+    z-index: 1000;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    background: white;
+    text-align: center;
+  }
+  
+  .welcome {
+    background: #b80000;
+    color: yellow;
+  } */
+
+/* #field {
+    width: 200px;
+    border: 10px groove black;
+    background-color: #00FF00;
+    position: relative;
+  }
+
+  #ball {
+    position: absolute;
+  } */
+
+/* #field {
+    position: relative;
+    cursor: pointer;
+    width: 200px;
+    height: 150px;
+    border: 10px solid black;
+    background-color: #00FF00;
+    overflow: hidden;
+  }
+
+  #ball {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transition: all 1s;
+  } */
+
+/* #title {
+    cursor: pointer;
+}
+
+.a::before {
+    content: '▼ ';
+    color: green;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 0;
+    list-style: none;
+}
+.open {
+    display: none;
+}
+
+.come::before {
+    content: '▶ ';
+    color: green;
+} */
+
+
+/* body {
+    margin: 10px auto;
+    width: 470px;
+  }
+  
+  h3 {
+    margin: 0;
+    padding-bottom: .3em;
+    font-size: 1.1em;
+  }
+  
+  p {
+    margin: 0;
+    padding: 0 0 .5em;
+  }
+  
+  .pane {
+    position: relative;
+    background: #edf5e1;
+    padding: 10px 20px 10px;
+    border-top: solid 2px #c4df9b;
+  }
+  .removeMessage {
+    display: none;
+  }
+
+  
+  .remove-button {
+
+    position: absolute;
+    font-size: 110%;
+    color: darkred;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .arrow {
+    padding: 0;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+  }
+  
+  .arrow:focus {
+    outline: none;
+  }
+  
+  .arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    height: 130px;
+    width: 390px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    
+    padding-top: 15px;
+    position: relative;
+    transition: all ease 1s;
+  }
+
+  .main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 500px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: aqua;
+    overflow: hidden;
+    overflow: scroll;
+  }
+  
+
+  .wrapper {
+    display: flex;
+    width: 390px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .left {
+    top: 40%;
+    left: 10px;
+    z-index: 3;
+  }
+
+  .right {
+    top: 40%;
+    right: 10px;
+    z-index: 3;
+  }
+  
+  ul img {
+    width: 130px;
+    height: 130px;
+    display: block;
+  }
+  
+  ul li {
+    display: inline-block;
+  } */
+
+/* .text:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .removeMessage {
+    display: none;
+  } */
+
+/* table {
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 4px;
+  }
+  th {
+    cursor: pointer;
+  }
+  th:hover {
+    background: yellow;
+  } */
+
+/* html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#prompt-form {
+    display: inline-block;
+    padding: 5px 5px 5px 70px;
+    width: 200px;
+    border: 1px solid black;
+    background: white url(https://en.js.cx/clipart/prompt.png) no-repeat left 5px;
+    vertical-align: middle;
+}
+
+#prompt-form-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(125, 124, 124, 0.5);
+}
+
+#prompt-form-container:before {
+    display: inline-block;
+    height: 100%;
+    content: '';
+    vertical-align: middle;
+}
+
+#prompt-form input[name="text"] {
+    display: block;
+    margin: 5px;
+    width: 180px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+
+} */
