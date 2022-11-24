@@ -807,27 +807,33 @@
 //     } return integers.find((item) => item%2 != 0)
 // }
 
-function unique(arr) {
-    let uniqueArr = new Set(arr);
-    let result = [];
-    for(let value of uniqueArr) result.push(value)
-    return result;
-}
-  let values = ["Hare", "Krishna", "Hare", "Krishna",
-  "Krishna", "Krishna", "Hare", "Hare", ":-O"
-];
-console.log(unique(values))
+// function unique(arr) {
+//     let uniqueArr = new Set(arr);
+//     let result = [];
+//     for(let value of uniqueArr) result.push(value)
+//     return result;
+// }
+//   let values = ["Hare", "Krishna", "Hare", "Krishna",
+//   "Krishna", "Krishna", "Hare", "Hare", ":-O"
+// ];
+// console.log(unique(values))
 
-let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
-function aclean(arr){
-    let result = []
-    let obj = new Map();
-    for(let i = 0; i < arr.length; i++){
-        result.push(arr[i].toLowerCase().split("").sort().join(""))
-        obj.set(result[i], arr[i])
-    }
-    let a = Array.from(obj.values())
-    return a;
-}
+// let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+// function aclean(arr){
+//     let result = []
+//     let obj = new Map();
+//     for(let i = 0; i < arr.length; i++){
+//         result.push(arr[i].toLowerCase().split("").sort().join(""))
+//         obj.set(result[i], arr[i])
+//     }
+//     let a = Array.from(obj.values())
+//     return a;
+// }
 
-console.log(aclean(arr))
+let arr = [5, 8, 12, 19, 22];
+function sumTwoSmallestNumbers(numbers) {  
+    numbers.sort( (a, b) => a - b );
+    return numbers[0] + numbers[1]
+  }
+
+  console.log(sumTwoSmallestNumbers(arr))
