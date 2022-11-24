@@ -855,7 +855,17 @@
 //     return a;
 //   }
 
-function litres(time) {
-    let litres = time*0.5
-    return Math.floor(litres)
-  }
+// function litres(time) {
+//     let litres = time*0.5
+//     return Math.floor(litres)
+//   }
+
+// function enough(cap, on, wait) {
+//     let result = 0
+//     if (cap > (on + wait)) {
+//         return result
+//     } else {
+//         result += (+on + +wait) - cap
+//     }
+//     return result;
+// }
