@@ -836,16 +836,22 @@
 //     return numbers[0] + numbers[1]
 //   }
 
-function fakeBin(x) {
-    let arr = x.split("")
-    let arrBin = []
-    for (let i = 0; i < arr.length; i++){
-        if(+arr[i] >=5){
-            arrBin.push(1)
-        }else {
-            arrBin.push(0)
-        }
-    }
-    let str = arrBin.join("")
-    console.log(str)
-}
+// function fakeBin(x) {
+//     let arr = x.split("")
+//     let arrBin = []
+//     for (let i = 0; i < arr.length; i++){
+//         if(+arr[i] >=5){
+//             arrBin.push(1)
+//         }else {
+//             arrBin.push(0)
+//         }
+//     }
+//     let str = arrBin.join("")
+//     console.log(str)
+// }
+
+function makeUpperCase(str) {
+   let a = str.toUpperCase();
+    return a;
+  }
+console.log(makeUpperCase("hello"));
