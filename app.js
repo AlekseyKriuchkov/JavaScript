@@ -850,8 +850,12 @@
 //     console.log(str)
 // }
 
-function makeUpperCase(str) {
-   let a = str.toUpperCase();
-    return a;
+// function makeUpperCase(str) {
+//    let a = str.toUpperCase();
+//     return a;
+//   }
+
+function litres(time) {
+    let litres = time*0.5
+    return Math.floor(litres)
   }
-console.log(makeUpperCase("hello"));
