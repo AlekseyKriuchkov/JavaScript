@@ -901,3 +901,20 @@
 //     list.sort((a,b)=>a-b)
 //     return list[list.length-1];
 // }
+
+function getSum(a,b)
+{
+   if (a === b){
+     return a;
+   }else{
+    let arr = [a,b]
+    arr.sort((a,b)=>a-b)
+    console.log(arr)
+    let result = 0;
+    for(let i = arr[0]; i <= arr[1]; i++){
+        result += i
+    }
+    return result
+   }
+}
+
