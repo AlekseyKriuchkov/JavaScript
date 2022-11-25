@@ -869,3 +869,24 @@
 //     }
 //     return result;
 // }
+
+// function isTriangle(a,b,c){
+//     let arr = []
+//     arr.push(a)
+//     arr.push(b)
+//     arr.push(c)
+//     arr.sort( (a, b) => a - b );
+//     if(arr[0]+arr[1] > arr[2]){
+//         return true;
+//     } else{
+//         return false;
+//     }
+// }
+
+// let arr = ["a", "b", "c"]
+// function numbers(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         array[i] = `${i + 1}: ${array[i]}`
+//     }
+//     return array
+// }
