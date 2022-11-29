@@ -918,7 +918,16 @@
 //    }
 // }
 
-function reverseWords(str) {
-    return str.split(' ').map((item) => item.split("").reverse().join("")).join(" ");
-  }
-console.log(reverseWords('The quick brown fox jumps over the lazy dog.'))
+// function reverseWords(str) {
+//     return str.split(' ').map((item) => item.split("").reverse().join("")).join(" ");
+//   }
+
+let arr = [-1023, 1, -2]
+function oddOrEven(array) {
+    let sum = 0;
+    array.map((a) => sum += a)
+    if(sum%2 == 0){
+        return 'even'
+    } return 'odd'
+ }
+
